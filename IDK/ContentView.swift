@@ -103,7 +103,7 @@ struct BankCard : View{
                     Image(systemName: "dot.radiowaves.right")
                         .foregroundColor(.white)
                         .font(.system(size: 40))
-                    ZStack{
+                    HStack{
                         if #available(iOS 15.0, *) {
                             Circle()
                                 .foregroundColor(.red)
@@ -118,9 +118,10 @@ struct BankCard : View{
                         //  if #available(iOS 15.0, *) {
                         Circle()
                             .foregroundColor(.orange)
+                            .offset(x: -33)
                        
                     }.padding(.trailing)
-                    
+                        .offset(x:60)
                     Image("giro")
                         .resizable()
                         .frame(width: 55, height: 55)
